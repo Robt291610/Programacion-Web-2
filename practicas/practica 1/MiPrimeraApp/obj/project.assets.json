@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LENOVO\\Desktop\\Programacion Web 2\\practicas\\practica 1\\MiPrimeraApp\\MiPrimeraApp.csproj",
+      "projectUniqueName": "C:\\Users\\LENOVO\\Desktop\\web 2\\practicas\\practica 1\\MiPrimeraApp\\MiPrimeraApp.csproj",
       "projectName": "MiPrimeraApp",
-      "projectPath": "C:\\Users\\LENOVO\\Desktop\\Programacion Web 2\\practicas\\practica 1\\MiPrimeraApp\\MiPrimeraApp.csproj",
+      "projectPath": "C:\\Users\\LENOVO\\Desktop\\web 2\\practicas\\practica 1\\MiPrimeraApp\\MiPrimeraApp.csproj",
       "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LENOVO\\Desktop\\Programacion Web 2\\practicas\\practica 1\\MiPrimeraApp\\obj\\",
+      "outputPath": "C:\\Users\\LENOVO\\Desktop\\web 2\\practicas\\practica 1\\MiPrimeraApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
