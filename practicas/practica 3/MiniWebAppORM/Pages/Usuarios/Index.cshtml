@@ -1,0 +1,39 @@
+﻿@page
+@model MiniWebAppORM.Pages.Usuarios.IndexModel
+@{
+    ViewData["Title"] = "Usuarios";
+}
+
+<h1>Usuarios</h1>
+
+<form method="post">
+    <label>Nombre:</label>
+    <input type="text" name="Nombre" asp-for="NuevoUsuario.Nombre" required />
+    <br />
+    <label>Email:</label>
+    <input type="email" name="Email" asp-for="NuevoUsuario.Email" required />
+    <br />
+    <button type="submit">Agregar Usuario</button>
+</form>
+
+<hr />
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model.Usuarios)
+        {
+            <tr>
+                <td>@user.Id</td>
+                <td>@user.Nombre</td>
+                <td>@user.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>
