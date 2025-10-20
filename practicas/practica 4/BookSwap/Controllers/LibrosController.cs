@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using BookSwap.Models;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BookSwap.Controllers
 {
@@ -16,6 +17,7 @@ namespace BookSwap.Controllers
         };
 
         // ACCIÓN 1: Catálogo (Index - GET /Libros)
+        [Authorize]
         public IActionResult Index()
         {
             return View(_libros);
@@ -48,6 +50,8 @@ namespace BookSwap.Controllers
 
         // ACCIÓN 4: Compartir (POST - Procesa el envío del formulario)
         [HttpPost]
+        [Authorize]
+        [ValidateAntiForgeryToken]
         public IActionResult Compartir(Libro nuevoLibro)
         {
             if (ModelState.IsValid)
